@@ -6,18 +6,26 @@
 
 
 ## 添加
+```shell
+git submodule add https://github.com/goodwong/docker-webpack.git .docker-compose
+cd ./docker-compose
+cp .env.example .env
+```
 
-./docker-compose
+配置`.env`
+SERVER_PORT=8080
+COMPOSE_PROJECT_NAME=APP_NAME
+
 
 ## 使用
 ```shell
 cd ./docker-compose
-cp .env.example .env
 docker-compose up -d
 ```
 
 访问
 http://localhost:端口 （端口需要在.env文件配置，默认8080）
+
 
 ### 首次使用
 需要VPN！
@@ -34,6 +42,3 @@ docker-compose exec npm sh
 ```shell
 ./deploy.sh prod
 ```
-
-## 配置.env
-SERVER_PORT=8080
