@@ -1,6 +1,8 @@
 # docker 开发环境 for webpack
 
 - 运行webpack的环境
+- 使用 alpine，体积小
+- 已经安装rsync工具，方便同步文件到远程服务器
 
 
 ## 添加
