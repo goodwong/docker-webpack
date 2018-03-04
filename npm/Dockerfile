@@ -26,4 +26,4 @@ WORKDIR /var/www/html
 
 # RUN npm install # 编译时候卷不会挂载，所有也没法install
 
-CMD npm install && npm run dev
+CMD npm install && ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --progress --config build/webpack.dev.conf.js --port ${SERVER_PORT}
