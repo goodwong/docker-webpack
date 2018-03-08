@@ -10,7 +10,7 @@ services:
       - ~/.ssh/:/root/.ssh/:cached
     environment:
       - CHANGE_SOURCE=${CHANGE_SOURCE}
-      - SERVER_PORT=${SERVER_PORT}
+      - PORT=${SERVER_PORT}
     ports:
       - "${SERVER_PORT}:${SERVER_PORT}"
     tty: true
