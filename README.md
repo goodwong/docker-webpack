@@ -43,5 +43,5 @@ docker-compose exec npm sh
 ```
 进入容器后，愉快的运行命令吧
 ```shell
-npm build
+npm run build
 ```
