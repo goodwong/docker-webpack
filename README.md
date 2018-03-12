@@ -8,7 +8,7 @@
 ## 添加
 ```shell
 git submodule add https://github.com/goodwong/docker-webpack.git .docker-compose
-cd ./docker-compose
+cd .docker-compose
 cp .env.example .env
 ```
 
@@ -19,7 +19,7 @@ COMPOSE_PROJECT_NAME=APP_NAME
 
 ## 使用
 ```shell
-cd ./docker-compose
+cd .docker-compose
 # 第一次使用需要安装packages
 docker-compose run --rm npm npm install
 # 启动服务
@@ -43,5 +43,5 @@ docker-compose exec npm sh
 ```
 进入容器后，愉快的运行命令吧
 ```shell
-./deploy.sh prod
+npm build
 ```
