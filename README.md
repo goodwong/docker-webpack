@@ -8,6 +8,7 @@
 ## 添加
 ```shell
 git submodule add https://github.com/goodwong/docker-webpack.git .docker-compose
+# git submodule add git@github.com:goodwong/docker-webpack.git .docker-compose
 cd .docker-compose
 cp .env.example .env
 ```
