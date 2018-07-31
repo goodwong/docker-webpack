@@ -21,10 +21,11 @@ COMPOSE_PROJECT_NAME=APP_NAME
 ## 使用
 ```shell
 cd .docker-compose
+docker-compose run --rm npm
 # 第一次使用需要安装packages
-docker-compose run --rm npm npm install
+npm install
 # 启动服务
-docker-compose up -d
+npm run dev # 或者 npm run serve，看webpack版本
 ```
 
 访问
