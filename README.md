@@ -21,7 +21,8 @@ COMPOSE_PROJECT_NAME=APP_NAME
 ## 使用
 ```shell
 cd .docker-compose
-docker-compose run --rm npm
+docker-compose up -d
+docker-compose exec npm sh
 # 第一次使用需要安装packages
 npm install
 # 启动服务
